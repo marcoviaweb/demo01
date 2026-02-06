@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Git Cheat Sheet</h1>
+        <p>Los comandos esenciales para dominar el control de versiones</p>
+    </header>
+
+    <main>
+        <!-- Configuración -->
+        <section class="category-card">
+            <h2>Configuración</h2>
+            <ul class="command-list">
+                <li class="command-item">
+                    <code class="command-code">git config --global user.name "Tu Nombre"</code>
+                    <span class="command-desc">Define tu nombre de usuario global.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git config --global user.email "tu@email.com"</code>
+                    <span class="command-desc">Define tu correo electrónico global.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git config --list</code>
+                    <span class="command-desc">Muestra la configuración actual.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Iniciar Proyecto -->
+        <section class="category-card">
+            <h2>Iniciar Proyecto</h2>
+            <ul class="command-list">
+                <li class="command-item">
+                    <code class="command-code">git init</code>
+                    <span class="command-desc">Inicializa un nuevo repositorio Git en el directorio actual.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git clone &lt;url&gt;</code>
+                    <span class="command-desc">Clona un repositorio remoto a tu máquina local.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Trabajo Diario -->
+        <section class="category-card">
+            <h2>Trabajo Diario</h2>
+            <ul class="command-list">
+                <li class="command-item">
+                    <code class="command-code">git status</code>
+                    <span class="command-desc">Muestra el estado de los archivos (modificados, en staging, etc.).</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git add &lt;archivo&gt;</code>
+                    <span class="command-desc">Agrega un archivo al área de preparación (staging). Usa . para
+                        todo.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git commit -m "mensaje"</code>
+                    <span class="command-desc">Guarda los cambios preparados con un mensaje descriptivo.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git log</code>
+                    <span class="command-desc">Muestra el historial de commits.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Ramas (Branches) -->
+        <section class="category-card">
+            <h2>Ramas</h2>
+            <ul class="command-list">
+                <li class="command-item">
+                    <code class="command-code">git branch</code>
+                    <span class="command-desc">Lista las ramas locales.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git branch &lt;nombre&gt;</code>
+                    <span class="command-desc">Crea una nueva rama.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git checkout &lt;nombre&gt;</code>
+                    <span class="command-desc">Cambia a la rama especificada. (O usa 'git switch').</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git merge &lt;rama&gt;</code>
+                    <span class="command-desc">Fuciona la rama especificada con la actual.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sincronización -->
+        <section class="category-card">
+            <h2>Sincronización</h2>
+            <ul class="command-list">
+                <li class="command-item">
+                    <code class="command-code">git fetch</code>
+                    <span class="command-desc">Descarga cambios del remoto pero no los fusiona.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git pull</code>
+                    <span class="command-desc">Descarga cambios y los fusiona (fetch + merge).</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git push</code>
+                    <span class="command-desc">Sube tus commits locales al repositorio remoto.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Deshacer Cambios -->
+        <section class="category-card">
+            <h2>Deshacer Cambios</h2>
+            <ul class="command-list">
+                <li class="command-item">
+                    <code class="command-code">git checkout -- &lt;archivo&gt;</code>
+                    <span class="command-desc">Descarta cambios en el directorio de trabajo.</span>
+                </li>
+                <li class="command-item">
+                    <code class="command-code">git reset --soft HEAD~1</code>
+                    <span class="command-desc">Deshace el último commit manteniendo cambios en staging.</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Generado con ❤️ para desarrolladores</p>
+    </footer>
+</body>
+
+</html>
