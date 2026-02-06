@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #0f172a;
+    --bg-color: #a6e4ee;
     --text-color: #e2e8f0;
     --card-bg: #1e293b;
     --accent-color: #38bdf8;
@@ -108,7 +108,7 @@ footer {
     body {
         padding: 1rem;
     }
-    
+
     header h1 {
         font-size: 2rem;
     }
